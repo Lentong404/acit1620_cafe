@@ -16,28 +16,50 @@
 <body>
     <!-- Navigation -->
     <header>
-        <div class="logo-placeholder"></div>
+        
         <nav>
-            
-            <ul class="nav-menu">
-                <li><a href="./index.html">Home</a></li>
+            <ul id="nav-toggle" class="nav-menu">
+                <li class="logo-placeholder"><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <button class="hamenu" onclick="menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+
+        <script>
+            function menu(x) {
+            x.classList.toggle("change");
+
+            var menu = document.getElementById("nav-toggle");
+            if (menu.style.display === "flex") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "flex";
+            }
+            }
+        </script>
+
+        <section>
+            <img class="hero" src="media/cafe_outside.jpg" alt="cafe outside">
+        </section>
+
     </header>
     
     <!-- Main -->
      <main>
-        
+
         <section>
             <h1>
                 I AM A STEGOSAURUS.
             </h1>
         </section>
         
-
      </main>
 
     <!-- Footer -->
