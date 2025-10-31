@@ -62,6 +62,9 @@ a{
 
 /* Header Styles */
 @media(min-width: 18.74rem){
+    nav{
+        display: none;
+    }
 
     .nav-menu{
         flex-direction: column;
