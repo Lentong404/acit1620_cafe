@@ -1,0 +1,45 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    height: 100vh;
+    overflow:hidden;
+}
+
+.background
+{
+    overflow: hidden;
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+}
+
+.weekly_special
+{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-self:auto;
+    background-color: brown;
+    height: 60vh;
+    width: 80vw;
+}
+
+.imaje
+{
+    display: grid;
+    align-self: center;
+    height: 25vh;
+}
+
+.cafe-name
+{
+    background-color: brown;
+    position: absolute;
+    top: 20vh;
+    left: 100px;
+}
+
