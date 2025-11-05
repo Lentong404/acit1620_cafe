@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="" sizes="32x32" />
-     <!-- Javascript -->
-    <script src="/scripts/script.js"></script>
+     <link rel="icon" type="image/png" href="" sizes="32x32"/>
     <title>Café Luna</title>
 </head>
 
@@ -26,13 +24,13 @@
             </ul>
         </nav>
 
-        <button class="hamenu" onclick="menu(this)">
+        <button type="button" class="hamenu" onclick="menu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
 
-        <script>
+        <!-- <script>
             function menu(x) {
             x.classList.toggle("change");
 
@@ -43,14 +41,24 @@
                 menu.style.display = "flex";
             }
             }
-        </script>
+        </script> -->
 
-        <section>
-            <h1>
-                I AM A STEGOSAURUS.
-            </h1>
-            <img class="hero" src="media/cafe_outside.jpg" alt="cafe outside">
+        <h1 class="header_title">
+            I AM A STEGOSAURUS.
+        </h1>
+        <img class="hero" src="media/cafe_outside.jpg" alt="cafe outside">
+
+
+        
+        <section class="menu_specials">
+            <div class="specials">
+                <h2>Daily Specials</h2>
+            </div>
+            <div class="menu">
+                <p>Menu</p>
+            </div>
         </section>
+    
 
     </header>
     
@@ -67,5 +75,7 @@
      <footer>
         <p>&copy Unemployed Inc</p>
      </footer>
+     <!-- Javascript -->
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

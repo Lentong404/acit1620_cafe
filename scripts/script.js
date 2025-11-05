@@ -1,1 +1,3 @@
-console.log("Some code");
+function menu() {
+    document
+}

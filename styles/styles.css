@@ -1,0 +1,39 @@
+.header_title{
+    position: relative;
+    top: 35rem;
+    color: white;
+}
+
+
+/* Menu Specials  */
+.menu_specials{
+    position: relative;
+                                                   
+}
+
+.specials{
+    max-width: 35rem;
+    
+}
+
+.menu{
+    max-width: 25rem;
+    
+}
+
+.specials h2{
+    background-color: maroon;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.menu p{
+    position: relative;
+    bottom: 10px;
+    
+    background: rgb(138, 44, 44);
+    color: white;
+    padding: 0.3em;
+    border-radius: 0px 25px 25px 0px;
+}
