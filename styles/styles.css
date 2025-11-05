@@ -1,0 +1,15 @@
+.cafe_photo {
+    width: 27rem;
+    background-color: pink;
+}
+
+.gridFlexAbout {
+    
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+}

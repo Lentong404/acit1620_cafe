@@ -20,6 +20,10 @@ a{
 
  }
 
+ main{
+    margin-top: 10rem;
+ }
+
 .logo-placeholder{
     background-color:aquamarine;
     width: 100px;
@@ -27,7 +31,7 @@ a{
 }
 
 /* Navigation styles */
-@media(min-width: 18.74rem){
+/* @media(min-width: 18.74rem){
     header{
         background: grey;
         height: 100vh;
@@ -44,7 +48,7 @@ a{
         text-align: center;
         gap: 3rem;
     }
- }
+ } */
 
 
 @media(min-width: 43.75rem){
