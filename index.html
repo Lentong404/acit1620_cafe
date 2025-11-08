@@ -10,63 +10,70 @@
      <link rel="icon" type="image/png" href="" sizes="32x32"/>
     <title>Café Luna</title>
 </head>
-
 <body>
     <!-- Navigation -->
     <header>
         
         <nav>
             <ul id="nav-toggle" class="nav-menu">
-                <li class="logo-placeholder"><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <button type="button" class="hamenu" onclick="menu(this)">
+        <button type="button" id="nav_button" class="hamenu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
 
-        <!-- <script>
-            function menu(x) {
-            x.classList.toggle("change");
-
-            var menu = document.getElementById("nav-toggle");
-            if (menu.style.display === "flex") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "flex";
-            }
-            }
-        </script> -->
-
         <h1 class="header_title">
-            I AM A STEGOSAURUS.
+            Cafe Luna
         </h1>
         <img class="hero" src="media/cafe_outside.jpg" alt="cafe outside">
 
-
-        
-        <section class="menu_specials">
-            <div class="specials">
-                <h2>Daily Specials</h2>
-            </div>
-            <div class="menu">
-                <p>Menu</p>
-            </div>
-        </section>
-    
-
-    </header>
-    
     <!-- Main -->
      <main>
+        
+        <section class="dailyspecial">
+            <h2>Daily Specials</h2>
+            <div class="slider">
+                
+                <div class="slides">
+                    <div id="slide-1">
+                        <img src="media/breakfast.jpg" alt="Assortment of breakfast foods.">
+                    </div>
 
-        <section>
-            
+                    <div id="slide-2">
+                        <img id="slide-1" src="media/croissant.jpg" alt="Assortment of breakfast foods.">
+                    </div>
+
+                    <div id="slide-3">
+                        <img id="slide-1" src="media/iced_cofee.jpg" alt="Assortment of breakfast foods.">
+                    </div>
+
+                    <div id="slide-4">
+                        <img id="slide-1" src="media/pastry_set.jpg" alt="Assortment of breakfast foods.">
+                    </div>
+
+                    <div id="slide-5">
+                        <img id="slide-1" src="media/coffee_heart.jpg" alt="Assortment of breakfast foods.">
+                    </div>
+                </div>
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+                <a href="#slide-5">5</a>
+            </div>
+            <div>
+                <p>
+                    Our daily specials include: 
+                </p>
+            </div>
+
         </section>
         
      </main>
@@ -77,5 +84,6 @@
      </footer>
      <!-- Javascript -->
     <script src="/scripts/script.js"></script>
+    
 </body>
 </html>
