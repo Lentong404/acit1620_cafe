@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="" sizes="32x32"/>
+     <link rel="icon" href="media/cat_favi.png" sizes="32x32"/>
     <title>Café Luna</title>
 </head>
 <body>
@@ -15,8 +15,8 @@
     <header>
         
         <nav>
+            <a href="./index.html"><img class="home_icon" src="media/full_cat.svg" alt="A cat that is used as the Cafe icon"></a>
             <ul id="nav-toggle" class="nav-menu">
-                <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./contact.html">Contact</a></li>
@@ -36,11 +36,17 @@
 
     <!-- Main -->
      <main>
-        
-        <section class="dailyspecial">
+
+        <article>
             <h2>Daily Specials</h2>
+
+            <p>
+                Our daily specials include: 
+            </p>
+        </article>
+        
+        <section class="carousal">
             <div class="slider">
-                
                 <div class="slides">
                     <div id="slide-1">
                         <img src="media/breakfast.jpg" alt="Assortment of breakfast foods.">
@@ -68,18 +74,15 @@
                 <a href="#slide-4">4</a>
                 <a href="#slide-5">5</a>
             </div>
-            <div>
-                <p>
-                    Our daily specials include: 
-                </p>
-            </div>
 
+            x
         </section>
         
      </main>
 
     <!-- Footer -->
      <footer>
+
         <p>&copy Unemployed Inc</p>
      </footer>
      <!-- Javascript -->

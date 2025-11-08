@@ -2,28 +2,32 @@
   box-sizing: border-box;
 }
 
-.hero{
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    top: 0;
+html{
+  font-family: "Klee One", cursive;
 }
-
-.header_title{
-    position: absolute;
-    color: white;
-    bottom: 1rem;
-    margin-left: 2rem;
-}
-
 
 /* Mobile Styles */
+
+/* Icon */
+
+.home_icon{
+  width: 100px;
+  position: fixed;
+  background-color: white;
+  padding: 5px;
+  margin: 1rem;
+  border-radius: 25px;
+
+  z-index: 50;
+}
+
+
 /* Navigation styles */
 .nav-menu{
     display: none;
 }
 
-/* Menu after button is */
+/* Menu after button is selected */
 .show-menu {
     display: flex;
     flex-direction: column;
@@ -43,7 +47,7 @@
     z-index: 49;
 }
 
-/* Button */
+/* Nav Button */
 .hamenu{
   position: fixed;
   bottom: 0;
@@ -52,7 +56,9 @@
   margin: 1rem;
 
   border: none;
-  background-color: transparent;
+  background-color: white;
+  border-radius: 5px;
+  padding: 4px 6px 4px 6px;
 
   z-index: 50;
 }
@@ -60,7 +66,7 @@
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #cec8ff;
+  background-color: rgb(255, 181, 181);;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -75,9 +81,26 @@
   transform: translate(0, -11px) rotate(45deg);
 }
 
+/* Hero Banner */
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    top: 0;
+}
+
+.header_title{
+    position: absolute;
+    color: white;
+    bottom: 1rem;
+    margin-left: 2rem;
+}
+
+
 /* Carousal */
 
-.dailyspecial{
+.carousal{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,11 +108,12 @@
 }
 
 
+
+
 .slider {
   width: 300px;
   text-align: center;
   overflow: hidden;
-  
 }
 
 .slides {
@@ -101,6 +125,10 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   border-radius: 50px;
+}
+
+.slider a{
+  font-size: 18px;
 }
 
 
@@ -150,32 +178,68 @@
 
 
 /* Desktop Styles */
-
-/* Navigation*/
-
 @media(min-width: 43.75rem){
+    /* Navigation */
+
+    .home_icon{
+      position: revert;
+    }
+
+    nav{
+      display: flex;
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: rgba(0, 0, 0, 0.555);
+      width: 100vw;
+      height: 125px;
+
+    }
+
     .hamenu{
         display: none;
     }
 
-
     .nav-menu{
         display: flex;
-        position: absolute;
-
-        width: 100vw;
-        padding-left: 0;
-        justify-content: flex-end;
-        
         font-size: 28px;
         gap: 4rem;
+
+        margin-right: 3rem;
         
     }
 
     .nav-menu a{
         color: white;
-        text-shadow: 1px 1px;
     }
+
+    /* Carousol */
+
+    .slider {
+      width: 500px;
+    }
+
+    .slides > div {
+      width: 500px;
+      height: 500px;
+      
+    }
+
+    .carousal{
+      flex-direction: row;
+
+    }
+
+
+
+
+
+
+
+
+
+
 }
 
 
