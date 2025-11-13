@@ -3,7 +3,11 @@
 }
 
 html{
-  font-family: "Klee One", cursive;
+  font-family: cursive;
+}
+
+img{
+  border-radius: 25px;
 }
 
 /* Mobile Styles */
@@ -89,6 +93,7 @@ html{
     width: 100vw;
     object-fit: cover;
     top: 0;
+    border-radius: 0;
 }
 
 .header_title{
@@ -98,28 +103,41 @@ html{
     margin-left: 2rem;
     text-shadow: #000000 1px 1px 2px;
 }
-/* Daily Special */
+
+/* Main */
 
 .daily_special, .featured_menu, .store_mascots, .social_media{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin-top: 3rem;
 }
 
-.daily_special_img{
-  width: 250px;
-  height: 250px;
-  border-radius: 25px;
+/* Daily Special */
+
+
+.daily_special img{
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
 }
 
 /* Featured menu */
 
+.featured_menu{
+  text-align: center;
+ 
+}
 
-
+.featured_menu img{
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: bottom;
+}
 
 /* Store Mascots */
-
 
 /* Carousal */
 
@@ -132,7 +150,6 @@ html{
 
 .slider {
   width: 300px;
-  text-align: center;
   overflow: hidden;
 }
 
@@ -144,29 +161,11 @@ html{
   
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  border-radius: 50px;
 }
 
 .slider a{
   font-size: 24px;
 }
-
-
-/* Webkit-scrollbar is not standard and only appears on Chrome/Safari */
-
-/* .slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-.slides::-webkit-scrollbar-thumb {
-  background: rgb(255, 181, 181);
-  border-radius: 10px;
-}
-
-.slides::-webkit-scrollbar-track {
-  background: transparent;
-} */
 
 .slides > div {
   scroll-snap-align: start;
@@ -202,17 +201,53 @@ html{
   padding: 1rem;
   margin: 2rem;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   background-color: rgb(255, 181, 181);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.cat_button:hover{
+  background-color: rgb(241, 123, 123);
+  color: white;
 }
 
 /* Social Media CTA */
 
+.social_media{
+  margin: 1rem;
+}
+
+.social_media_icons{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social_icon{
+  width: 3rem;
+  border-radius: 0;
+  fill: palevioletred;
+}
+
+.social_icon:hover{
+  fill: aqua;
+}
 
 
 /* Desktop Styles */
 @media(min-width: 43.75rem){
-    /* Navigation */
+
+  main{
+    font-size: 20px;
+  }
+
+  h1{
+    font-size: 54px;
+  }
+  
+  /* Navigation */
 
     .home_icon{
       position: revert;
@@ -252,21 +287,64 @@ html{
     /* Carousol */
 
     .slider {
-      width: 500px;
+      width: 45rem;
     }
 
     .slides > div {
-      width: 500px;
-      height: 500px;
-      
+      width: 45rem;
+      height: 45rem;
     }
 
     .carousal{
       flex-direction: row;
-
     }
 
+    .slider a{
+      font-size: 28px;
+    }
 
+/* Main*/
+    .daily_special_info, .featured_menu_info, .store_mascots_info{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+/* Daily Specials */
+
+    .daily_special_info{
+      gap: 3rem;
+      
+    }
+
+    .daily_special_info p, .store_mascots_info p{
+      width: 35rem;
+      line-height: 2rem;
+    }
+
+    .daily_special img{
+      width: 30rem;
+      height: 30rem;
+    }
+
+    
+/* Featured Menu */
+    .featured_menu_info{
+      gap: 5rem;
+    }
+
+/* Store mascots */
+
+    .store_mascots_info{
+      align-items: center;
+      gap: 3rem;
+    }
+
+/* Social Media CTA  */
+
+    .social_media{
+      margin-top: 3rem;
+    }
 
 
 
