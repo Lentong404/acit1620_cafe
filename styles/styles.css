@@ -25,7 +25,9 @@ html{
 /* Navigation styles */
 .nav-menu{
     display: none;
+    z-index: 98;
 }
+
 
 /* Menu after button is selected */
 .show-menu {
@@ -44,7 +46,6 @@ html{
 
     margin: 0;
     padding: 0;
-    z-index: 49;
 }
 
 /* Nav Button */
@@ -60,7 +61,7 @@ html{
   border-radius: 5px;
   padding: 4px 6px 4px 6px;
 
-  z-index: 50;
+  z-index: 99;
 }
 
 .bar1, .bar2, .bar3 {
@@ -95,7 +96,29 @@ html{
     color: white;
     bottom: 1rem;
     margin-left: 2rem;
+    text-shadow: #000000 1px 1px 2px;
 }
+/* Daily Special */
+
+.daily_special, .featured_menu, .store_mascots, .social_media{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.daily_special_img{
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+/* Featured menu */
+
+
+
+
+/* Store Mascots */
 
 
 /* Carousal */
@@ -106,9 +129,6 @@ html{
     justify-content: center;
     align-items: center;
 }
-
-
-
 
 .slider {
   width: 300px;
@@ -128,11 +148,13 @@ html{
 }
 
 .slider a{
-  font-size: 18px;
+  font-size: 24px;
 }
 
 
-.slides::-webkit-scrollbar {
+/* Webkit-scrollbar is not standard and only appears on Chrome/Safari */
+
+/* .slides::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
@@ -144,7 +166,7 @@ html{
 
 .slides::-webkit-scrollbar-track {
   background: transparent;
-}
+} */
 
 .slides > div {
   scroll-snap-align: start;
@@ -174,6 +196,17 @@ html{
   height: 100%;
 }
 
+/* More about our Cats button */
+
+.cat_button{
+  padding: 1rem;
+  margin: 2rem;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(255, 181, 181);
+}
+
+/* Social Media CTA */
 
 
 
@@ -183,6 +216,7 @@ html{
 
     .home_icon{
       position: revert;
+      width: 75px;
     }
 
     nav{
@@ -193,8 +227,9 @@ html{
 
       background-color: rgba(0, 0, 0, 0.555);
       width: 100vw;
-      height: 125px;
-
+      height: 100px;
+      
+      z-index: 99;
     }
 
     .hamenu{
