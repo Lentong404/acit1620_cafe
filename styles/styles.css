@@ -3,7 +3,11 @@
 }
 
 html{
-  font-family: '';
+  font-family: "Klee One", cursive;
+}
+
+h1, h2, h3{
+    font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 img{
@@ -126,6 +130,7 @@ img{
 .daily_special_info p, .store_mascots_info p{
   width: 20rem;
   line-height: 2rem;
+  text-align: left;
 }
 
 /* Daily Special */
