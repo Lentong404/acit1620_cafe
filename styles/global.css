@@ -1,0 +1,87 @@
+html{
+    background-color:rgb(255, 241, 230);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    margin: 0.5rem;
+}
+
+a{
+     text-decoration: none;
+     color: black;
+ }
+ 
+ li{
+     list-style: none;
+ }
+
+ h1{
+
+ }
+
+ main{
+    margin-top: 10rem;
+ }
+
+.logo-placeholder{
+    background-color:aquamarine;
+    width: 100px;
+    height: 100px;
+}
+
+/* Navigation styles */
+/* @media(min-width: 18.74rem){
+    header{
+        background: grey;
+        height: 100vh;
+        font-size: 24px;
+
+        display: flex;
+        
+
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+ } */
+
+
+@media(min-width: 43.75rem){
+    
+    header{
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        
+        width: 100%;
+        top: 0;
+
+        font-size: 24px;
+    }
+
+    nav{
+        margin-right: 5rem;
+        
+    }
+
+    .nav-menu{
+        display: Flex;
+        gap: 3rem;
+        
+    }
+}
+
+ /* Footer Styles */
+
+@media(min-width: 18.74rem){
+    footer{
+     bottom: 0;
+     text-align: center;
+     padding: 1rem;
+    }
+ }
