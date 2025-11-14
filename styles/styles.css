@@ -1,5 +1,5 @@
 /* desktop styles */
-@media(min-width: 43.75rem){
+@media(min-width: 18.74rem){
 
 .cafe_photo {
     width: 35rem;
@@ -57,7 +57,7 @@
 
 }
 
-@media(min-width: 18.74rem){
+@media(max-width: 18.74rem){
 .cafe_photo {
     width: 15rem;
 
