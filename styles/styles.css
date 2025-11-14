@@ -3,7 +3,7 @@
 }
 
 html{
-  font-family: cursive;
+  font-family: '';
 }
 
 img{
@@ -32,6 +32,15 @@ img{
     z-index: 98;
 }
 
+.nav-menu a{
+    color: white;
+}
+
+.nav-menu a:hover{
+  color: rgb(241, 123, 123);
+  transition-duration: 0.4s;
+}
+
 
 /* Menu after button is selected */
 .show-menu {
@@ -41,7 +50,7 @@ img{
     justify-content: center;
     gap: 3rem;
 
-    font-size: 24px;
+    font-size: 32px;
 
     width: 100vw;
     height: 100vh;
@@ -112,6 +121,11 @@ img{
   align-items: center;
   text-align: center;
   margin-top: 3rem;
+}
+
+.daily_special_info p, .store_mascots_info p{
+  width: 20rem;
+  line-height: 2rem;
 }
 
 /* Daily Special */
@@ -203,8 +217,6 @@ img{
   border: none;
   border-radius: 30px;
   background-color: rgb(255, 181, 181);
-  cursor: pointer;
-  transition-duration: 0.4s;
 }
 
 .cat_button:hover{
@@ -228,12 +240,12 @@ img{
 .social_icon{
   width: 3rem;
   border-radius: 0;
-  fill: palevioletred;
+  
 }
 
-.social_icon:hover{
-  fill: aqua;
-}
+/* .social_icon:hover{
+  
+} */
 
 
 /* Desktop Styles */
@@ -280,19 +292,17 @@ img{
         
     }
 
-    .nav-menu a{
-        color: white;
-    }
+    
 
     /* Carousol */
 
     .slider {
-      width: 45rem;
+      width: 35rem;
     }
 
     .slides > div {
-      width: 45rem;
-      height: 45rem;
+      width: 35rem;
+      height: 35rem;
     }
 
     .carousal{
