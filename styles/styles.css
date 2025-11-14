@@ -34,7 +34,7 @@
 }
 
 .cafeMap {
-    width: 15rem;
+    width: 25rem;
 }
 
 .table-hours {
@@ -58,6 +58,59 @@
 }
 
 @media(min-width: 18.74rem){
+.cafe_photo {
+    width: 15rem;
+
+}
+
+.bakery_photo {
+    height: 25rem;
+}
+
+.flexAbout {
+    align-items: center;
+
+    justify-content: space-evenly;
+    gap:  150px;
+    width: 15rem;
+    margin: 5rem;
+    
+} 
+
+.para2  {
+    width: 15rem;
+    
+}
+
+.infoAbout {
+    align-items: center;
+
+    justify-content: space-evenly;
+    gap:  150px;
+    width: 20rem;
+    margin: 5rem;
+}
+
+.cafeMap {
+    width: 15rem;
+}
+
+.table-hours {
+    align-items: center;
+    text-align: center;
+
+    /* margin-left: auto;
+    margin-right: auto;  */
+    width: 15rem; 
+    border-spacing: 15px;
+    
+}
+
+.title {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
 
 
 }
