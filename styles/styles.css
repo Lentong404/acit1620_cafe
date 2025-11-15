@@ -2,8 +2,18 @@ h1.menu {
     text-align: center;
 }
 
-.content {
-    text-align: center;
-    display: flex;
-    
+.content > * {
+  border: 2px solid rgb(96 139 168);
+  border-radius: 5px;
+  background-color: rgb(96 139 168 / 0.2);
 }
+/* main content of menu */
+.content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+ p {
+      font-size: 16px;
+    }
