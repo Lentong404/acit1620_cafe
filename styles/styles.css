@@ -7,20 +7,27 @@ h1.menu {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: center;
     justify-content: space-between;
 }
 
 p {
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
 }
 
-  h2, h1 {
+  h1 {
     text-align: center;
   }
 
 h2 {
   font-size: 19px;
+}
+.content img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: auto;
+  height: 150px;
 }
 
 /* desktop media queries */
@@ -28,17 +35,10 @@ h2 {
   .content {
   display: flex;
   flex-direction: row;
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
   }
 
 .content > * {
     width: 250px;
-    height: 400px;
+    height: 300px;
 }
-
-  p{
-    font-size: 12px;
-  }
 }
