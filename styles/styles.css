@@ -10,6 +10,10 @@ h1, h2, h3{
     font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
+h2{
+  margin: 0;
+}
+
 img{
   border-radius: 25px;
 }
@@ -19,13 +23,13 @@ img{
 /* Icon */
 
 .home_icon{
-  width: 100px;
+  width: 85px;
   position: fixed;
   background-color: white;
   padding: 5px;
   margin: 1rem;
   border-radius: 25px;
-
+  top: 0;
   z-index: 99;
 }
 
@@ -59,6 +63,7 @@ img{
     width: 100vw;
     height: 100vh;
     position: fixed;
+    top: 0;
     background: rgb(223, 177, 121);
 
     margin: 0;
@@ -119,12 +124,30 @@ img{
 
 /* Main */
 
-.daily_special, .featured_menu, .store_mascots, .social_media{
+main{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+h3{
+  margin: 0;
+}
+
+.daily_special, .featured_menu, .store_mascots, .social_media{
   margin-top: 3rem;
+}
+
+.daily_special h2, .featured_menu h2, .store_mascots h2, .social_media h2{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .daily_special_info p, .store_mascots_info p{
@@ -134,8 +157,6 @@ img{
 }
 
 /* Daily Special */
-
-
 .daily_special img{
   width: 20rem;
   height: 20rem;
@@ -240,6 +261,7 @@ img{
   align-items: center;
   gap: 2rem;
   margin-top: 1rem;
+  justify-content: center;
 }
 
 .social_icon{
@@ -250,39 +272,21 @@ img{
 
 /* About Page - Marco */
 .cafe_photo {
-    width: 15rem;
-
+    width: 20rem;
 }
 
 .bakery_photo {
-    height: 25rem;
+    width: 17rem;
 }
 
-.flexAbout {
+.infoAbout1, .infoAbout2{
     align-items: center;
-
-    justify-content: space-evenly;
-    gap:  150px;
-    width: 15rem;
-    margin: 5rem;
-    
-} 
-
-.para2  {
-    width: 15rem;
-    
-}
-
-.infoAbout {
-    align-items: center;
-    justify-content: space-evenly;
-    gap:  100px;
     width: 20rem;
-    margin: 5rem;
+    margin-bottom: 2rem;
 }
 
 .cafeMap {
-    width: 15rem;
+    width: 20rem;
 }
 
 .table-hours {
@@ -290,13 +294,35 @@ img{
     text-align: left;
     width: 20rem; 
     border-spacing: 15px;
-    
 }
 
-.title {
+
+
+/* Menu - Dylan */
+
+/* main content of menu */
+.menu_content {
     display: flex;
-    align-self: center;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 2rem;
+}
+
+.menu_content article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_content p{
+  width: 20rem;
+}
+
+.menu_content img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
 }
 
 
@@ -308,14 +334,14 @@ img{
   }
 
   h1{
-    font-size: 54px;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
   }
-  
+
   /* Navigation */
 
     .home_icon{
       position: revert;
-      width: 75px;
     }
 
     nav{
@@ -340,14 +366,48 @@ img{
         display: flex;
         font-size: 28px;
         gap: 4rem;
-
         margin-right: 3rem;
-        
+    }
+
+/* Home Page - Len */
+
+
+  /* Main*/
+    .daily_special_info, .featured_menu_info, .store_mascots_info{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
 
     
+/* Daily Specials */
 
-    /* Carousol */
+    .daily_special_info p, .store_mascots_info p{
+      width: 35rem;
+    }
+
+    .daily_special_info{
+      gap: 3rem;
+    }
+
+    .daily_special img{
+      width: 30rem;
+      height: 30rem;
+    }
+
+    
+/* Featured Menu */
+    .featured_menu_info{
+      gap: 5rem;
+    }
+
+/* Store mascots */
+    .store_mascots_info{
+      align-items: center;
+      gap: 3rem;
+    }
+
+/* Carousol */
 
     .slider {
       width: 35rem;
@@ -366,43 +426,6 @@ img{
       font-size: 28px;
     }
 
-/* Main*/
-    .daily_special_info, .featured_menu_info, .store_mascots_info{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-    
-/* Daily Specials */
-
-    .daily_special_info{
-      gap: 3rem;
-      
-    }
-
-    .daily_special_info p, .store_mascots_info p{
-      width: 35rem;
-      line-height: 2rem;
-    }
-
-    .daily_special img{
-      width: 30rem;
-      height: 30rem;
-    }
-
-    
-/* Featured Menu */
-    .featured_menu_info{
-      gap: 5rem;
-    }
-
-/* Store mascots */
-
-    .store_mascots_info{
-      align-items: center;
-      gap: 3rem;
-    }
-
 /* Social Media CTA  */
 
     .social_media{
@@ -411,54 +434,65 @@ img{
 
 /* About Page - Marco */
     .cafe_photo {
-        width: 35rem;
-
+        width: 40rem;
     }
 
     .bakery_photo {
-        height: 25rem;
+        width: 35rem;
     }
 
-    .flexAbout {
+    .infoAbout1, .infoAbout2 {
         display: flex;
         align-items: center;
-
         justify-content: space-evenly;
         gap:  150px;
         width: 80rem;
-        margin: 5rem;
-        
+        margin-bottom: 4rem;
     }
 
-    .para2  {
-        width: 40rem;
-        
+    .infoAbout2{
+      flex-direction: row-reverse;
     }
 
-    .infoAbout {
+    .operationHours {
         display: flex;
         align-items: center;
         width: 75rem;
         justify-content: space-evenly;
+        margin-bottom: 2rem;
     }
 
     .cafeMap {
-        width: 25rem;
+        width: 30rem;
     }
 
     .table-hours {
         width: 30rem; 
         border-spacing: 15px;
-        
     }
 
-    .title {
-        display: flex;
-        align-self: center;
-        justify-content: center;
+    /* Menu - Dylan */
+    .menu_content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
 
+    .menu_content article {
+      width: 20rem;
+    }
 
+    .menu_content p{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .menu h2{
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+    
 }
 
 
@@ -469,47 +503,6 @@ footer{
     padding: 1rem;
 }
 
-.menu h1{
-    text-align: center;
-}
 
-/* main content of menu */
-.content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-}
 
-p {
-  font-size: 15px;
-  text-align: center;
-}
 
-  h1 {
-    text-align: center;
-  }
-
-h2 {
-  font-size: 19px;
-}
-.content img {
-  border-radius: 25px;
-  max-width: 100%;
-  width: auto;
-  height: 150px;
-}
-
-/* desktop media queries */
-@media(min-width: 43.75rem){
-  .content {
-  display: flex;
-  flex-direction: row;
-  }
-
-  .content > * {
-      width: 250px;
-      height: 300px;
-  }
-}
