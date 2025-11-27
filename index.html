@@ -6,80 +6,146 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32" />
-     <!-- Javascript -->
-    <script src="/scripts/script.js"></script>
-    <title>Café Luna</title>
+     <link rel="icon" href="media/cat_favi.png" sizes="32x32"/>
+    <title>Catata Café</title>
 </head>
-
 <body>
     <!-- Navigation -->
     <header>
-        
         <nav>
+            <a href="./index.html"><img class="home_icon" src="media/full_cat.svg" alt="A cat that is used as the Cafe icon"></a>
             <ul id="nav-toggle" class="nav-menu">
-                <li class="logo-placeholder"><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <button class="hamenu" onclick="menu(this)">
+        <button type="button" id="nav_button" class="hamenu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
 
-        <script>
-            function menu(x) {
-            x.classList.toggle("change");
-
-            var menu = document.getElementById("nav-toggle");
-            if (menu.style.display === "flex") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "flex";
-            }
-            }
-        </script>
-
-        <section id="home" class="background">
-            <h1 class="cafe-name">
-                Luna Cafe.
-            </h1>
-
-            
-
-            <a href="#footer"><img class="hero" src="media/cafe_outside.jpg" alt="cafe outside"></a>
-        </section>
-        
-    </header>  
-
-
+        <h1 class="header_title">
+            Catata Café
+        </h1>
+        <img class="hero" src="media/cafe_outside.jpg" alt="cafe outside">
+    </header>
     <!-- Main -->
      <main>
 
-        <section class="weekly_special">
-            <p>
-                <h3>
-                    THa cool coffee :3
-                </h3>
-                
-                <pre>
-                 This cool coffeee is awesome
-                        $10.95
-                </pre>
-            </p>
-            <img class="imaje" src="media/iced_cofee.jpg" alt="iced coffee">
-        </section>
+        <!-- Daily Special -->
+        <article class="daily_special">
+            <h2>
+                Daily Special
+            </h2>
+            <section class="daily_special_info">
+                <img src="media/cat_cup.jpeg" alt="Daily special item: Seasonal meow-nificent pumpkin latte">
+                <section>
+                    <p>Our seasonal meow-nificent pumpkin latte. Made with love from our staff and cats.</p>
+                    <p>Daily special pricing: $2.99</p>
+                </section>
+            </section>
+        </article>
+
+        <!-- Featured Menu Items -->
+        <article class="featured_menu">
+            <h2>Featured Menu</h2>
+            <section class="featured_menu_info">
+                <article>
+                    <h3>Coffee Flight</h3>
+                    <img src="media/three_style_coffee.jpg" alt="Three styles of coffee.">
+                </article>
+
+                <article>
+                    <h3>Shaken Iced Latte</h3>
+                    <img src="media/iced_coffee.jpg" alt="Iced coffee that is shaken">
+                </article>
+
+                <article>
+                    <h3>Tea Time Platter</h3>
+                    <img src="media/pastry_set_2.jpg" alt="Assortment of cakes for tea time">
+                </article>
+            </section>
+            <a href="./menu.html">
+                <button type="button" class="cat_button">
+                    See the rest of our menu
+                </button>
+            </a>
+
+        </article>
+        
+        <!-- Store Cats -->
+        <article class="store_mascots">
+            <h2>Meet our store's adorable mascots!</h2>
+            <section class="store_mascots_info">
+                <section class="carousal">
+                    <div class="slider">
+                        <div class="slides">
+                            <div id="slide-1">
+                                <img src="media/cats/Tata.jpg" alt="A fluffy cat named Tata">
+                            </div>
+
+                            <div id="slide-2">
+                                <img id="slide-1" src="media/cats/chocolate.jpg" alt="A cat named Chocolate">
+                            </div>
+
+                            <div id="slide-3">
+                                <img id="slide-1" src="media/cats/kiki.jpg" alt="A cat named Kiki">
+                            </div>
+
+                            <div id="slide-4">
+                                <img id="slide-1" src="media/cats/mimo_hat.jpg" alt="A cat with a hat named Mimo">
+                            </div>
+
+                            <div id="slide-5">
+                                <img id="slide-1" src="media/cats/toby.jpg" alt="A cat named Toby">
+                            </div>
+                        </div>
+                        <a href="#slide-1">1</a>
+                        <a href="#slide-2">2</a>
+                        <a href="#slide-3">3</a>
+                        <a href="#slide-4">4</a>
+                        <a href="#slide-5">5</a>
+                    </div>
+                </section>
+                <section>
+                    <p>Our fluffy felines are always looking to cuddle with you during your visit. Come see our Cat of the month, or learn more about them via the link below!</p>
+                    <a href="./about.html#cat_staff">
+                        <button type="button" class="cat_button">
+                            Learn more
+                        </button>
+                    </a>
+                </section>
+            </section>
+        </article>
+
+        <!-- Social Media -->
+         <article class="social_media">
+            <h2>
+                Keep in touch through our social media
+            </h2>
+            <section class="social_media_icons">
+                <a href="https://www.facebook.com/"><img class="social_icon" src="media/icons/facebook.svg" alt="facebook link"></a>
+                <a href="https://x.com/"><img class="social_icon" src="media/icons/x-twitter.svg" alt="facebook link"></a>
+                <a href="https://www.instagram.com/"><img class="social_icon" src="media/icons/instagram.svg" alt="facebook link"></a>
+            </section>
+         </article>
         
      </main>
 
     <!-- Footer -->
-     <footer id="footer">
-        <a href="#home"><p>&copy Unemployed Inc</p></a></footer>
-     </footer>
+    <footer>
+    <p>&copy Unemployed Inc 2025</p>
+    </footer>
+    <!-- Javascript -->
+    <script src="/scripts/script.js"></script>
+    
 </body>
 </html>

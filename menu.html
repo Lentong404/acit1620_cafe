@@ -6,62 +6,107 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="" sizes="32x32" />
-     <!-- Javascript -->
-    <script src="/scripts/script.js"></script>
-    <title>Café Luna</title>
+     <link rel="icon" href="media/cat_favi.png" sizes="32x32"/>
+    <title>Catata Café</title>
 </head>
-
 <body>
     <!-- Navigation -->
     <header>
-        
         <nav>
+            <a href="./index.html"><img class="home_icon" src="media/full_cat.svg" alt="A cat that is used as the Cafe icon"></a>
             <ul id="nav-toggle" class="nav-menu">
-                <li class="logo-placeholder"><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <button class="hamenu" onclick="menu(this)">
+        <button type="button" id="nav_button" class="hamenu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
 
-        <script>
-            function menu(x) {
-            x.classList.toggle("change");
-
-            var menu = document.getElementById("nav-toggle");
-            if (menu.style.display === "flex") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "flex";
-            }
-            }
-        </script>
-
         <h1>
-            This is the Menu Page
+            Menu
         </h1>
-
     </header>
-    
     <!-- Main -->
      <main>
+        <section class="menu">
+            <h2>Food</h2>
+            <div class="menu_content">
+                <article>
+                    <h3>The Meowssant</h3>
+                    <p><b>$4.50</b></p>
+                    <img src="../media/croissant.jpg" alt="classic french style croissant">
+                    <p>A classic, croissant baked until crisp on the outside and soft inside</p>
+                </article>
+                <article>
+                    <h3>The Purrrfect Panini</h3>
+                    <p><b>$10.50</b></p>
+                    <img src="../media/panini.jpg" alt="Panini">
+                    <p>Roasted turkey, basil pesto, tomato, and melted mozzarella pressed between warm ciabatta.</p>
+                </article>
+                <article>
+                    <h3>ChocoPurr Muffin</h3>
+                    <p><b>$5.99</b></p>
+                    <img src="../media/pastry_set_2.jpg" alt="potato wedges">
+                    <p>A rich, fluffy chocolate muffin with gooey chocolate chunks, baked to perfection and purr-fectly sweet.
+                    </p>
+                </article>
+                <article>
+                    <h3>Mewcarons</h3>
+                    <p><b>$1.99 ea.</b></p>
+                    <img src="../media/macarons.jpg" alt="cat shaped macarons">
+                    <p>Adorable cat-shaped French macarons with flavors like strawberry cream, pistachio, and chocolate ganache.</p>
+                </article>
+            </div>
+        </section>
         
-
-        
-
+        <section class="menu">
+            <h2>Drinks</h2>
+            <div class="menu_content">
+                <article>
+                    <h3>Tabby Mocha</h3>
+                    <p><b>$4.99</b></p>
+                    <img src="../media/mocha.jpg" alt="chocolate mocha with steamed milk">
+                    <p>A smooth espresso combined with steamed milk and rich chocolate, topped with a light layer of foam. </p>
+                </article>
+                <article>
+                    <h3>Iced kattychinno</h3>
+                    <p><b>$5.00</b></p>
+                    <img src="../media/iced_coffee.jpg" alt="a iced cappuchino with cocoa paw print">
+                    <p>A light and frothy cappuccino featuring silky microfoam and a hint of vanilla sweetness. Topped with a tiny cocoa paw print.</p>
+                </article>
+                <article>
+                    <h3>whisker whip latte</h3>
+                    <p><b>$5.50</b></p>
+                    <img src="../media/coffee_heart.jpg" alt="cat shaped macarons">
+                    <p>Rich espresso and creamy steamed milk, topped with a swirl of foam shaped like cat whiskers.
+                    </p>
+                </article>
+                <article>
+                    <h3>Berry Purr-ade</h3>
+                    <p><b>$3.50</b></p>
+                    <img src="../media/berry_limeade.jpg" alt="berry lemonade">
+                    <p>A refreshing blend of fresh-squeezed lemonade and mixed berry puree, served with ice.</p>
+                </article>
+            </div>
+        </section>
      </main>
 
     <!-- Footer -->
      <footer>
-        <p>&copy Unemployed Inc</p>
+        <p>&copy Unemployed Inc 2025</p>
      </footer>
+     <!-- Javascript -->
+    <script src="/scripts/script.js"></script>
+    
 </body>
 </html>
