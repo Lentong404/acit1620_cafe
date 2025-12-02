@@ -14,9 +14,7 @@ h2{
   margin: 0;
 }
 
-img{
-  border-radius: 25px;
-}
+
 
 /* Mobile Styles */
 
@@ -64,7 +62,7 @@ img{
     height: 100vh;
     position: fixed;
     top: 0;
-    background: rgb(223, 177, 121);
+    background: #9c6f44;
 
     margin: 0;
     padding: 0;
@@ -89,7 +87,7 @@ img{
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: rgb(255, 181, 181);;
+  background-color: 	#6f4827;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -147,7 +145,7 @@ h3{
 
 .daily_special h2, .featured_menu h2, .store_mascots h2, .social_media h2{
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .daily_special_info p, .store_mascots_info p{
@@ -167,7 +165,14 @@ h3{
 
 .featured_menu{
   text-align: center;
- 
+}
+
+.featured_menu_info article{
+  margin-bottom: 3rem;
+}
+
+.featured_menu_info h3{
+  margin-bottom: 1rem;
 }
 
 .featured_menu img{
@@ -178,6 +183,12 @@ h3{
 }
 
 /* Store Mascots */
+
+.mascot_info_2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* Carousal */
 
@@ -350,7 +361,7 @@ h3{
       justify-content: space-between;
       align-items: center;
 
-      background-color: rgba(0, 0, 0, 0.555);
+      background-color: #563517;
       width: 100vw;
       height: 100px;
       
@@ -401,11 +412,15 @@ h3{
       gap: 5rem;
     }
 
+    
+
 /* Store mascots */
     .store_mascots_info{
       align-items: center;
       gap: 3rem;
     }
+
+    
 
 /* Carousol */
 
@@ -476,7 +491,7 @@ h3{
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      
     }
 
     .menu_content article {
