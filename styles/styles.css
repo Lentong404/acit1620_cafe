@@ -1,113 +1,724 @@
-/* desktop styles */
-@media(min-width: 18.74rem){
+* {
+  box-sizing: border-box;
+}
 
+html{
+  font-family: "Klee One", cursive;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+h2{
+  margin: 0;
+}
+
+/* Button Styles*/
+
+.cat_button{
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 0 0 2rem 0;
+  border: none;
+  
+  background-image: linear-gradient(135deg, #6F4E37 40%, #5A3E2D);
+  color: white;
+}
+
+.cat_button:hover{
+  background-image: linear-gradient(135deg, #B3826C 40%, #6F4E37);
+  color: white;
+}
+
+.cat_button2{
+  width: 10rem;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 0 0 2rem 0;
+  border: none;
+  
+  background-image: linear-gradient(135deg, #6F4E37 40%, #5A3E2D);
+  color: white;
+}
+
+.cat_button2:hover{
+  background-image: linear-gradient(135deg, #B3826C 40%, #6F4E37);
+  color: white;
+}
+
+.cat_button2:checked{
+  box-shadow: 2px 2px 5px #5A3E2D;
+}
+
+
+
+/* Mobile Styles */
+
+/* Icon */
+
+.home_icon{
+  width: 85px;
+  position: fixed;
+  background-color: white;
+  padding: 5px;
+  margin: 1rem;
+  border-radius: 25px;
+  top: 0;
+  z-index: 99;
+}
+
+
+/* Navigation styles */
+.nav-menu{
+    display: none;
+    z-index: 98;
+}
+
+.nav-menu a{
+    color: white;
+}
+
+.nav-menu a:hover{
+  color: rgb(241, 123, 123);
+  transition-duration: 0.4s;
+}
+
+
+/* Menu after button is selected */
+.show-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 3rem;
+
+    font-size: 32px;
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: #9c6f44;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav Button */
+.hamenu{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  margin: 1rem;
+
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 4px 6px 4px 6px;
+
+  z-index: 99;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: 	#6f4827;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Hero Banner */
+
+.scroll-arrow{
+  display: none;
+}
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    top: 0;
+    border-radius: 0;
+}
+
+.header_title{
+    position: absolute;
+    color: white;
+    bottom: 1rem;
+    margin-left: 2rem;
+    text-shadow: #000000 1px 1px 2px;
+}
+
+/* Main */
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+h3{
+  margin: 0;
+}
+
+.monthly_special, .featured_menu, .store_mascots{
+  margin-top: 1rem;
+}
+
+.monthly_special h2, .featured_menu h2, .store_mascots h2{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.monthly_special_info p, .store_mascots_info p, .featured_menu_info p{
+  width: 20rem;
+  line-height: 2rem;
+  text-align: left;
+}
+
+/* Carousal */
+
+.carousal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slider {
+  width: 300px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider a{
+  font-size: 24px;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.slider img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Daily Special */
+.monthly_special img{
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+/* Menu Link */
+
+.featured_menu img{
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* Working Hours */
+
+.hours_overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5rem;
+  width: 20rem;
+  border-radius: 25px;
+  justify-content: center;
+}
+
+.cafe_hours{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+
+  color: white;
+  background-image: url('/media/cat_and_coffee.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 45rem;
+}
+
+/* About Page - Marco */
 .cafe_photo {
-    width: 35rem;
-
+    width: 20rem;
 }
 
 .bakery_photo {
-    height: 25rem;
+    width: 17rem;
 }
 
-.flexAbout {
-    display: flex;
-    align-items: center;
-
-    justify-content: space-evenly;
-    gap:  150px;
-    width: 80rem;
-    margin: 5rem;
-    
-}
-
-.para2  {
-    width: 40rem;
-    
-}
-
-.infoAbout {
-    display: flex;
-    align-items: center;
-
-    justify-content: space-evenly;
+.infoAbout1, .infoAbout2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 20rem;
+  margin-bottom: 2rem;
 }
 
 .cafeMap {
-    width: 25rem;
+    width: 20rem;
 }
 
 .table-hours {
-    /* align-items: center;
-    text-align: center;
-
-    margin-left: auto;
-    margin-right: auto; */
+    align-items: center;
+    text-align: left;
     width: 20rem; 
     border-spacing: 15px;
+}
+
+.visit_us h2{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.visit_us {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.operationHours{
+  margin-bottom: 2rem;
+}
+
+.infoAbout1 h2, .infoAbout2 h2{
+  margin-top: 1rem;
+}
+
+/* Cat Staff Profiles - Mobile */
+
+.cat_staff_profiles{
+  text-align: center;
+}
+
+
+.infoAboutCats{
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoAboutSingleCat img{
+  width: 22rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.infoAboutSingleCat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  height: 32rem;
+  background-color: #6F4E37;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.infoAboutSingleCat h3{
+  margin-top: 1em;
+}
+
+.infoAboutSingleCat p{
+  margin: 0.5em 0em 0.5em 0em;
+  width: 18rem;
+  text-align: center;
+}
+
+/* Menu mobile - Dylan */
+
+.menu_food{
+  display: none;
+}
+
+/* .menu_drinks{
+  display: none;
+} */
+
+.show-drinks{
+  display: block;
+}
+
+.show-food{
+  display: block;
+}
+
+.menu_drinks h2, .menu_drinks p, .menu_food h2, .menu_food p{
+  text-align: center;
+}
+
+.menu_drinks h4, .menu_food h4{
+  margin: 0.5rem;
+}
+
+.food_article img{
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.food_article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #BA9D8A;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.food_article p{
+  width: 18rem;
+}
+
+
+/* Desktop Styles */
+@media(min-width: 43.75rem){
+
+  main{
+    font-size: 20px;
+  }
+
+  h1{
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Navigation Desktop */
+
+    .home_icon{
+      position: revert;
+    }
+
+    nav{
+      display: flex;
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: #563517;
+      width: 100vw;
+      height: 100px;
+      
+      z-index: 99;
+      top: 0;
+    }
+
+    .hamenu{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+        font-size: 32px;
+        gap: 4rem;
+        margin-right: 3rem;
+    }
+
+    .arrow{
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      margin-left:-20px;
+      width: 40px;
+      height: 40px;
+      background-color: #BA9D8A;
+      padding: 2rem;
+      border-radius: 10px;
+
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .bounce {
+      animation: bounce 4s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+
+    .scroll-arrow{
+      display: flex;
+      width: 4rem;
+      position: absolute;
+      bottom: 2rem;
+      background-color: #eee;
+      border-radius: 50px;
+    }
+
+/* Home Page Desktop - Len */
+
+/* Store mascots Desktop */
+    .store_mascots_info{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .store_mascots_info{
+      align-items: center;
+      gap: 3rem;
+    }
+
+/* Carousol Desktop */
+
+    .slider {
+      width: 35rem;
+    }
+
+    .slides > div {
+      width: 35rem;
+      height: 35rem;
+    }
+
+    .carousal{
+      flex-direction: row;
+    }
+
+    .slider a{
+      font-size: 28px;
+    }
+
+    /* Link to Menu Desktop */
+
+    .featured_menu img{
+      width: 35rem;
+      height: 35rem;
+    }
+
+    .featured_menu{
+      display: flex;
+      flex-direction: row-reverse;
+      width: 70rem;
+      gap: 3rem;
+    }
+
+    .featured_menu_info{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
+/* Monthly Special Desktop */
+
+    .monthly_special_info p, .store_mascots_info p{
+      width: 35rem;
+    }
+
+    .monthly_special img{
+      width: 30rem;
+      height: 30rem;
+    }
+
+    .monthly_special{
+      display: flex;
+      margin-bottom: 1rem;
+      gap: 2rem;
+    }
+
+    .monthly_special_info{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
+/* Cafe Hours - Main Page Desktop */
+
+    .hours_overlay{
+      width: 50rem;
+    }
+
+
+/* About Desktop- Marco */
+    .cafe_photo {
+        width: 40rem;
+    }
+
+    .bakery_photo {
+        width: 35rem;
+    }
+
+    .infoAbout1, .infoAbout2 {
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80rem;
+        margin-bottom: 4rem;
+        gap: 5rem;
+    }
+
+    .infoAbout1{
+      flex-direction: row;
+    }
+
+    .infoAbout2{
+      flex-direction: row-reverse;
+    }
+
+    .visit_us{
+      text-align: center;
+    }
+
+    .operationHours {
+        display: flex;
+        align-items: center;
+        width: 75rem;
+        justify-content: space-evenly;
+        
+    }
+
+    .cafeMap {
+        width: 30rem;
+    }
+
+    .table-hours {
+        width: 30rem; 
+        border-spacing: 15px;
+    }
+
+    /* Cat Staff - Desktop */
+
+    .infoAboutSingleCat img{
+      width: 26rem;
+      height: 20rem;
+    }
+
+    .infoAboutSingleCat{
+      width: 26rem;
+      height: 36rem;
+    }
+
+
+    .catRow1, .catRow2{
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    /* Menu Desktop - Dylan */
+    .menu_button_layout{
+      display: flex;
+      width: 50rem;
+      justify-content: space-around;
+    }
+
+    .food_article_style{
+      display: flex;
+      gap: 2rem;
+    }
+    /* navigation footer for all web pages */
+    .navFooter { 
+     
+      display: flex; 
+      justify-content: space-evenly;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #BA9D8A;
+      color: white;
+    }
+
+    .navFooter h3 {
+      justify-content: space-between;
+    }
+
+    .footArticle {
+      width: 350px;
+    }
+    /* space between div articles */
+    .contactFoot {
+    
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .catOfTheMonth img{
+      margin-top: 15px;
+      width: 20rem;
+    }
+
+    .contacter {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
     
 }
 
-.title {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-}
-
-
-}
-
-@media(max-width: 18.74rem){
-.cafe_photo {
-    width: 15rem;
-
-}
-
-.bakery_photo {
-    height: 25rem;
-}
-
-.flexAbout {
-    align-items: center;
-
-    justify-content: space-evenly;
-    gap:  150px;
-    width: 15rem;
-    margin: 5rem;
-    
-} 
-
-.para2  {
-    width: 15rem;
-    
-}
-
-.infoAbout {
-    align-items: center;
-
-    justify-content: space-evenly;
-    gap:  150px;
-    width: 20rem;
-    margin: 5rem;
-}
-
-.cafeMap {
-    width: 15rem;
-}
-
-.table-hours {
-    align-items: center;
+/* For all webpages */
+/* Footer Styling */
+.footerCopy{
+    bottom: 0;
     text-align: center;
-    width: 15rem; 
-    border-spacing: 15px;
-    
-}
-
-.title {
-    display: flex;
-    align-self: center;
-    justify-content: center;
+    padding: 1rem;
 }
 
 
-}
+
+

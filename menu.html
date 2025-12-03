@@ -6,42 +6,150 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="" sizes="32x32" />
-     <!-- Javascript -->
-    <script src="/scripts/script.js"></script>
-    <title>Café Luna</title>
+     <link rel="icon" href="media/cat_favi.png" sizes="32x32"/>
+    <title>Catata Café</title>
 </head>
-
 <body>
     <!-- Navigation -->
     <header>
-        <div class="logo-placeholder"></div>
         <nav>
-            <ul class="nav-menu">
-                <li><a href="./index.html">Home</a></li>
+            <a href="./index.html"><img class="home_icon" src="media/full_cat.svg" alt="A cat that is used as the Cafe icon"></a>
+            <ul id="nav-toggle" class="nav-menu">
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <button type="button" id="nav_button" class="hamenu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+
+        <h1>
+            Menu
+        </h1>
     </header>
-    
     <!-- Main -->
      <main>
-        
-        <section>
-            <h1>
-                This is the Menu Page
-            </h1>
-        </section>
-        
+        <section class="menu_button_layout">
+            <button type="button" class="cat_button2" id="drink_button" checked>
+                Drinks
+            </button>
 
+            <button type="button" class="cat_button2" id="food_button">
+                Food
+            </button>
+        </section>
+
+        <section class="menu_drinks" id="show_drinks">
+            <h2>Drinks</h2>
+            <p>Each our drinks are pawcrafted with care!</p>
+            
+            <div class="food_article_style">
+                <article class="food_article">
+                    <h3>Tabby Mocha</h3>
+                    <h4>$4.99</h4>
+                    <img src="../media/mocha.jpg" alt="chocolate mocha with steamed milk">
+                    <p>A smooth espresso combined with steamed milk and rich chocolate, topped with a light layer of foam. </p>
+                </article>
+
+                <article class="food_article">
+                    <h3>Iced kattychinno</h3>
+                    <h4>$5.00</h4>
+                    <img src="../media/iced_coffee.jpg" alt="a iced cappuchino with cocoa paw print">
+                    <p>A light and frothy cappuccino featuring silky microfoam and a hint of vanilla sweetness. Topped with a tiny cocoa paw print.</p>
+                </article>
+
+                <article class="food_article">
+                    <h3>Whisker whip latte</h3>
+                    <h4>$5.50</h4>
+                    <img src="../media/coffee_heart.jpg" alt="cat shaped macarons">
+                    <p>Rich espresso and creamy steamed milk, topped with a swirl of foam shaped like cat whiskers.
+                    </p>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="menu_food" id="show_food">
+            <h2>Food</h2>
+            <p>Our food is delicious, but handle it with care among the cats!</p>
+
+            <div class="food_article_style">
+                <article class="food_article">
+                    <h3>The Meowssant</h3>
+                    <h4>$4.50</h4>
+                    <img src="../media/croissant.jpg" alt="classic french style croissant">
+                    <p>A classic, croissant baked until crisp on the outside and soft inside</p>
+                </article>
+
+                <article class="food_article">
+                    <h3>ChocoPurr Muffin</h3>
+                    <h4>$5.99</h4>
+                    <img src="../media/pastry_set_2.jpg" alt="potato wedges">
+                    <p>A rich, fluffy chocolate muffin with gooey chocolate chunks, baked to perfection and purr-fectly sweet.
+                    </p>
+                </article>
+
+                <article class="food_article">
+                    <h3>Mewcarons</h3>
+                    <h4>$1.99 ea.</h4>
+                    <img src="../media/macarons.jpg" alt="cat shaped macarons">
+                    <p>Adorable cat-shaped French macarons with flavors like strawberry cream, pistachio, and chocolate ganache.</p>
+                </article>
+            </div>
+        </section>
      </main>
 
     <!-- Footer -->
-     <footer>
-        <p>&copy Unemployed Inc</p>
-     </footer>
+    <footer class="footerCopy">
+
+        <section class="navFooter">
+            <article class="footArticle">
+                <h3>About us</h3>
+                <p> Catata Café is your new local coffee and pastry shop created in 2025. We bring to you a cup of coffee and our cats to warm up your day.</p>
+                <a href="./about.html">
+                    <button type="button" class="cat_button">About us</button>
+                </a>
+            </article>
+            <article class="footArticle">
+                <h3>Contact info</h3>
+                <section  class="contactFoot">
+                    <h4 class="contacter">Call</h4>
+                    <p class="contacter">+1 (604) 362-0619</p>
+                </section>
+                <section  class="contactFoot">
+                    <h4 class="contacter">Email us</h4>
+                    <p class="contacter">catatacafe@cafecat.com</p>
+                </section>
+                <section  class="contactFoot">
+                    <h4 class="contacter">Find us</h4>
+                    <p class="contacter">Canada, Vancouver, Main 67A</p>
+                </section>
+                                <a href="./contact.html">
+                    <button type="button" class="cat_button">Contact us</button>
+                </a>
+            </article>
+            <article class="footArticle">
+                <h3>Employee of the Month</h3>
+                <article class="catOfTheMonth">
+                    <img src="media/cats/Tata.jpg">
+                </article>
+                <p>Didn't bite Leo!</p>
+            </article>
+        </section>
+
+            <p>&copy Unemployed Inc</p>
+    </footer>
+     <!-- Javascript -->
+    <script src="/scripts/script.js"></script>
+    
 </body>
 </html>

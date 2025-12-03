@@ -6,42 +6,84 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="" sizes="32x32" />
-     <!-- Javascript -->
-    <script src="/scripts/script.js"></script>
+     <link rel="icon" href="media/cat_favi.png" sizes="32x32"/>
     <title>Café Luna</title>
 </head>
 
 <body>
     <!-- Navigation -->
     <header>
-        <div class="logo-placeholder"></div>
         <nav>
-            <ul class="nav-menu">
-                <li><a href="./index.html">Home</a></li>
+            <a href="./index.html"><img class="home_icon" src="media/full_cat.svg" alt="A cat that is used as the Cafe icon"></a>
+            <ul id="nav-toggle" class="nav-menu">
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./contact.html">Reservations</a></li>
             </ul>
         </nav>
+
+        <button type="button" id="nav_button" class="hamenu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+
+        <h1>
+            Contact Us!
+        </h1>
     </header>
     
     <!-- Main -->
-     <main>
-        
-        <section>
-            <h1>
-                This is the contact page
-            </h1>
-        </section>
-        
+    <main>
 
-     </main>
+    </main>
 
     <!-- Footer -->
-     <footer>
-        <p>&copy Unemployed Inc</p>
-     </footer>
+    <footer class="footerCopy">
+
+        <section class="navFooter">
+            <article class="footArticle">
+                <h3>About us</h3>
+                <p> Catata Café is your new local coffee and pastry shop created in 2025. We bring to you a cup of coffee and our cats to warm up your day.</p>
+                <a href="./about.html">
+                    <button type="button" class="cat_button">About us</button>
+                </a>
+            </article>
+            <article class="footArticle">
+                <h3>Contact info</h3>
+                <section  class="contactFoot">
+                    <h4 class="contacter">Call</h4>
+                    <p class="contacter">+1 (604) 362-0619</p>
+                </section>
+                <section  class="contactFoot">
+                    <h4 class="contacter">Email us</h4>
+                    <p class="contacter">catatacafe@cafecat.com</p>
+                </section>
+                <section  class="contactFoot">
+                    <h4 class="contacter">Find us</h4>
+                    <p class="contacter">Canada, Vancouver, Main 67A</p>
+                </section>
+                                <a href="./contact.html">
+                    <button type="button" class="cat_button">Contact us</button>
+                </a>
+            </article>
+            <article class="footArticle">
+                <h3>Employee of the Month</h3>
+                <article class="catOfTheMonth">
+                    <img src="media/cats/Tata.jpg">
+                </article>
+                <p>Didn't bite Leo!</p>
+            </article>
+        </section>
+
+            <p>&copy Unemployed Inc</p>
+    </footer>
+    <!-- Javascript -->
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
