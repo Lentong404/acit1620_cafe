@@ -22,7 +22,7 @@ h2{
   margin: 0 0 2rem 0;
   border: none;
   
-  background-image: linear-gradient(135deg, #6F4E37 40%, #5A3E2D);
+  background-image: linear-gradient(135deg,  #672F13 40%, #8E4013);
   color: white;
 }
 
@@ -50,6 +50,25 @@ h2{
   box-shadow: 2px 2px 5px #5A3E2D;
 }
 
+.cat_button3{
+  width: 10rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0 0 2rem 0;
+  border: none;
+  
+  background-image: linear-gradient(135deg, #774738 40%, #684028);
+  color: white;
+}
+
+.cat_button3:hover{
+  background-image: linear-gradient(135deg, #CC9966 40%, #804A26);
+  color:  white;
+}
+
+h1{
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
 
 
 /* Mobile Styles */
@@ -429,17 +448,57 @@ h3{
   width: 18rem;
 }
 
+/* Contact us - Mobile */
+
+.contact_us_page p{
+  margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.contact_info{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.contact_info h2{
+  margin-bottom: 0.5rem;
+}
+
+.single_contact_info{
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+}
+
+/* Form Stuff */
+
+.form_input{
+  color: antiquewhite;
+  background-color: #9F6D4F;
+  padding: 2rem 5rem 1rem 5rem;
+  border-radius: 2rem;
+}
+
+.form_input_single{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.5em;
+}
+
+.form_input_section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
 
 /* Desktop Styles */
 @media(min-width: 43.75rem){
 
   main{
     font-size: 20px;
-  }
-
-  h1{
-    margin-top: 10rem;
-    margin-bottom: 2rem;
   }
 
   /* Navigation Desktop */
@@ -653,7 +712,6 @@ h3{
       height: 36rem;
     }
 
-
     .catRow1, .catRow2{
       display: flex;
       flex-direction: row;
@@ -672,7 +730,23 @@ h3{
       gap: 2rem;
     }
 
-    
+    /* Contact Page Desktop */
+
+    .contact_us_page{
+      display: flex;
+      gap: 10rem;
+      margin-top: 2rem;
+      align-items: center;
+    }
+
+    .form_input_section h2{
+      text-align: center;
+    }
+
+    .form_input{
+      
+    }
+
 
     
 }
