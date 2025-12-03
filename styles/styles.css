@@ -469,7 +469,7 @@ h3{
   gap: 1em;
 }
 
-/* Form Stuff */
+/* Form Input Fields */
 
 .form_input{
   color: antiquewhite;
@@ -729,6 +729,8 @@ h3{
       display: flex;
       gap: 2rem;
     }
+
+
     /* navigation footer for all web pages */
     .navFooter { 
      
