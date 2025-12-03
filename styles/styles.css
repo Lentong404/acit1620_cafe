@@ -179,7 +179,7 @@ h1{
     text-shadow: #000000 1px 1px 2px;
 }
 
-/* Main */
+/* Main  Mobile*/
 
 main{
   display: flex;
@@ -212,7 +212,7 @@ h3{
   text-align: left;
 }
 
-/* Carousal */
+/* Carousal Mobile */
 
 .carousal{
     display: flex;
@@ -271,14 +271,14 @@ h3{
 
 
 
-/* Daily Special */
+/* Monthly Special - Mobile */
 .monthly_special img{
   width: 20rem;
   height: 20rem;
   object-fit: cover;
 }
 
-/* Menu Link */
+/* Menu Link - Mobile*/
 
 .featured_menu img{
   width: 20rem;
@@ -287,7 +287,7 @@ h3{
   object-position: bottom;
 }
 
-/* Working Hours */
+/* Working Hours - Mobile */
 
 .hours_overlay{
   background-color: rgba(0, 0, 0, 0.5);
@@ -729,34 +729,53 @@ h3{
       display: flex;
       gap: 2rem;
     }
-
-    /* Contact Page Desktop */
-
-    .contact_us_page{
-      display: flex;
-      gap: 10rem;
-      margin-top: 2rem;
-      align-items: center;
-    }
-
-    .form_input_section h2{
+    /* navigation footer for all web pages */
+    .navFooter { 
+     
+      display: flex; 
+      justify-content: space-evenly;
       text-align: center;
     }
 
-    .form_input{
-      
+    footer {
+      background-color: #BA9D8A;
+      color: white;
     }
 
+    .navFooter h3 {
+      justify-content: space-between;
+    }
 
+    .footArticle {
+      width: 350px;
+    }
+    /* space between div articles */
+    .contactFoot {
+    
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .catOfTheMonth img{
+      margin-top: 15px;
+      width: 20rem;
+    }
+
+    .contacter {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
     
 }
 
-
+/* For all webpages */
 /* Footer Styling */
-footer{
+.footerCopy{
     bottom: 0;
     text-align: center;
     padding: 1rem;
+    margin-top: 3rem;
 }
 
 
