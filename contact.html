@@ -18,39 +18,24 @@
 <body>
     <!-- Navigation -->
     <header>
-        
         <nav>
+            <a href="./index.html"><img class="home_icon" src="media/full_cat.svg" alt="A cat that is used as the Cafe icon"></a>
             <ul id="nav-toggle" class="nav-menu">
-                <li class="logo-placeholder"><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./contact.html">Reservations</a></li>
             </ul>
         </nav>
 
-        <button class="hamenu" onclick="menu(this)">
+        <button type="button" id="nav_button" class="hamenu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
 
-        <script>
-            function menu(x) {
-            x.classList.toggle("change");
-
-            var menu = document.getElementById("nav-toggle");
-            if (menu.style.display === "flex") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "flex";
-            }
-            }
-        </script>
-
         <h1>
-            This is the contact page
+            Contact Us!
         </h1>
-
     </header>
     
     <!-- Main -->
