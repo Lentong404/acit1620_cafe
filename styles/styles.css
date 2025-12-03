@@ -491,8 +491,45 @@ h3{
   gap: 1rem;
 }
 
+/* navigation footer for all web pages */
+footer {
+  background-color: #BA9D8A;
+  color: white;
+}
+
+.navFooter { 
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
 
 
+.footArticle {
+  width: 350px;
+}
+/* space between div articles */
+.contactFoot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catOfTheMonth img{
+  margin-top: 15px;
+  width: 20rem;
+}
+
+.contacter {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.footerCopy{
+  bottom: 0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
 
 /* Desktop Styles */
 @media(min-width: 43.75rem){
@@ -730,55 +767,38 @@ h3{
       gap: 2rem;
     }
 
+    /* Contact Page Desktop */
 
-    /* navigation footer for all web pages */
-    .navFooter { 
-     
-      display: flex; 
-      justify-content: space-evenly;
+    .contact_us_page{
+      display: flex;
+      gap: 10rem;
+      margin-top: 2rem;
+      align-items: center;
+    }
+
+    .form_input_section h2{
       text-align: center;
     }
 
-    footer {
-      background-color: #BA9D8A;
-      color: white;
+    /* Footer - Desktop Styles */
+    
+    .navFooter{
+      flex-direction: row;
     }
 
     .navFooter h3 {
       justify-content: space-between;
     }
 
-    .footArticle {
-      width: 350px;
-    }
-    /* space between div articles */
-    .contactFoot {
     
-      display: flex;
-      justify-content: space-between;
-
-    }
-
-    .catOfTheMonth img{
-      margin-top: 15px;
-      width: 20rem;
-    }
-
-    .contacter {
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
     
 }
+
+
+
 
 /* For all webpages */
 /* Footer Styling */
-.footerCopy{
-    bottom: 0;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
-}
 
 
 
