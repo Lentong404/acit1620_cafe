@@ -38,64 +38,71 @@
     </header>
     <!-- Main -->
      <main>
-        <section class="menu">
-            <h2>Food</h2>
-            <div class="menu_content">
-                <article>
-                    <h3>The Meowssant</h3>
-                    <p><b>$4.50</b></p>
-                    <img src="../media/croissant.jpg" alt="classic french style croissant">
-                    <p>A classic, croissant baked until crisp on the outside and soft inside</p>
-                </article>
-                <article>
-                    <h3>The Purrrfect Panini</h3>
-                    <p><b>$10.50</b></p>
-                    <img src="../media/panini.jpg" alt="Panini">
-                    <p>Roasted turkey, basil pesto, tomato, and melted mozzarella pressed between warm ciabatta.</p>
-                </article>
-                <article>
-                    <h3>ChocoPurr Muffin</h3>
-                    <p><b>$5.99</b></p>
-                    <img src="../media/pastry_set_2.jpg" alt="potato wedges">
-                    <p>A rich, fluffy chocolate muffin with gooey chocolate chunks, baked to perfection and purr-fectly sweet.
-                    </p>
-                </article>
-                <article>
-                    <h3>Mewcarons</h3>
-                    <p><b>$1.99 ea.</b></p>
-                    <img src="../media/macarons.jpg" alt="cat shaped macarons">
-                    <p>Adorable cat-shaped French macarons with flavors like strawberry cream, pistachio, and chocolate ganache.</p>
-                </article>
-            </div>
+        <section class="menu_button_layout">
+            <button type="button" class="cat_button2" id="drink_button" checked>
+                Drinks
+            </button>
+
+            <button type="button" class="cat_button2" id="food_button">
+                Food
+            </button>
         </section>
-        
-        <section class="menu">
+
+        <section class="menu_drinks" id="show_drinks">
             <h2>Drinks</h2>
-            <div class="menu_content">
-                <article>
+            <p>Each our drinks are pawcrafted with care!</p>
+            
+            <div class="food_article_style">
+                <article class="food_article">
                     <h3>Tabby Mocha</h3>
-                    <p><b>$4.99</b></p>
+                    <h4>$4.99</h4>
                     <img src="../media/mocha.jpg" alt="chocolate mocha with steamed milk">
                     <p>A smooth espresso combined with steamed milk and rich chocolate, topped with a light layer of foam. </p>
                 </article>
-                <article>
+
+                <article class="food_article">
                     <h3>Iced kattychinno</h3>
-                    <p><b>$5.00</b></p>
+                    <h4>$5.00</h4>
                     <img src="../media/iced_coffee.jpg" alt="a iced cappuchino with cocoa paw print">
                     <p>A light and frothy cappuccino featuring silky microfoam and a hint of vanilla sweetness. Topped with a tiny cocoa paw print.</p>
                 </article>
-                <article>
-                    <h3>whisker whip latte</h3>
-                    <p><b>$5.50</b></p>
+
+                <article class="food_article">
+                    <h3>Whisker whip latte</h3>
+                    <h4>$5.50</h4>
                     <img src="../media/coffee_heart.jpg" alt="cat shaped macarons">
                     <p>Rich espresso and creamy steamed milk, topped with a swirl of foam shaped like cat whiskers.
                     </p>
                 </article>
-                <article>
-                    <h3>Berry Purr-ade</h3>
-                    <p><b>$3.50</b></p>
-                    <img src="../media/berry_limeade.jpg" alt="berry lemonade">
-                    <p>A refreshing blend of fresh-squeezed lemonade and mixed berry puree, served with ice.</p>
+            </div>
+
+        </section>
+
+        <section class="menu_food" id="show_food">
+            <h2>Food</h2>
+            <p>Our food is delicious, but handle it with care among the cats!</p>
+
+            <div class="food_article_style">
+                <article class="food_article">
+                    <h3>The Meowssant</h3>
+                    <h4>$4.50</h4>
+                    <img src="../media/croissant.jpg" alt="classic french style croissant">
+                    <p>A classic, croissant baked until crisp on the outside and soft inside</p>
+                </article>
+
+                <article class="food_article">
+                    <h3>ChocoPurr Muffin</h3>
+                    <h4>$5.99</h4>
+                    <img src="../media/pastry_set_2.jpg" alt="potato wedges">
+                    <p>A rich, fluffy chocolate muffin with gooey chocolate chunks, baked to perfection and purr-fectly sweet.
+                    </p>
+                </article>
+
+                <article class="food_article">
+                    <h3>Mewcarons</h3>
+                    <h4>$1.99 ea.</h4>
+                    <img src="../media/macarons.jpg" alt="cat shaped macarons">
+                    <p>Adorable cat-shaped French macarons with flavors like strawberry cream, pistachio, and chocolate ganache.</p>
                 </article>
             </div>
         </section>
