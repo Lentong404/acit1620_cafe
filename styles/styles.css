@@ -91,6 +91,7 @@ h1{
 .nav-menu{
     display: none;
     z-index: 98;
+
 }
 
 .nav-menu a{
@@ -121,7 +122,10 @@ h1{
 
     margin: 0;
     padding: 0;
+
+
 }
+
 
 /* Nav Button */
 .hamenu{
@@ -404,27 +408,15 @@ h3{
 
 /* Menu mobile - Dylan */
 
-.menu_food{
+.menuFood{
   display: none;
 }
 
-/* .menu_drinks{
-  display: none;
-} */
-
-.show-drinks{
-  display: block;
-}
-
-.show-food{
-  display: block;
-}
-
-.menu_drinks h2, .menu_drinks p, .menu_food h2, .menu_food p{
+.menuDrinks h2, .menuDrinks p, .menuFood h2, .menuFood p{
   text-align: center;
 }
 
-.menu_drinks h4, .menu_food h4{
+.menuDrinks h4, .menuFood h4{
   margin: 0.5rem;
 }
 
@@ -499,6 +491,7 @@ h3{
 footer {
   background-color: #BA9D8A;
   color: white;
+  bottom: 0;
 }
 
 .navFooter { 
@@ -529,7 +522,6 @@ footer {
 }
 
 .footerCopy{
-  bottom: 0;
   text-align: center;
   padding: 1rem;
 }
