@@ -22,7 +22,6 @@ if (window.location.pathname === '/menu.html') {
     });
     
     document.getElementById("foodButton").addEventListener("click", () =>{
-        console.log("CLICK")
         let drinks = document.getElementById('showDrinks')
         let food = document.getElementById('showFood')
         

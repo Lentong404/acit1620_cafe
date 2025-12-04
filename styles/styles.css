@@ -15,15 +15,19 @@ h2{
   margin: 0;
 }
 
+a{
+  display: block;
+}
+
 /* Button Styles*/
 
 .cat_button{
   padding: 1rem 2rem 1rem 2rem;
-  margin: 0 0 2rem 0;
   border: none;
-  
   background-image: linear-gradient(135deg,  #672F13 40%, #8E4013);
   color: white;
+  width: 10rem;
+  text-align: center;
 }
 
 .cat_button:hover{
@@ -34,9 +38,7 @@ h2{
 .cat_button2{
   width: 10rem;
   padding: 1rem 2rem 1rem 2rem;
-  margin: 0 0 2rem 0;
   border: none;
-  
   background-image: linear-gradient(135deg, #6F4E37 40%, #5A3E2D);
   color: white;
 }
@@ -53,7 +55,6 @@ h2{
 .cat_button3{
   width: 10rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: 0 0 2rem 0;
   border: none;
   
   background-image: linear-gradient(135deg, #774738 40%, #684028);
@@ -233,6 +234,10 @@ h3{
   overflow: hidden;
 }
 
+.slider a{
+  display: inline;
+}
+
 .slides {
   display: flex;
   
@@ -302,6 +307,7 @@ h3{
   border-radius: 25px;
   justify-content: center;
 }
+
 
 .cafe_hours{
   display: flex;
@@ -426,6 +432,9 @@ h3{
 .menu_button_layout{
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 
 .food_article img{
@@ -513,7 +522,9 @@ footer {
 
 .footArticle {
   width: 350px;
+  margin-bottom: 2rem;
 }
+
 /* space between div articles */
 .contactFoot {
   display: flex;
