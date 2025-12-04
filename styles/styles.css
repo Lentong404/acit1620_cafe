@@ -423,6 +423,11 @@ h3{
   margin: 0.5rem;
 }
 
+.menu_button_layout{
+    display: flex;
+    flex-direction: column;
+  }
+
 .food_article img{
   width: 15rem;
   height: 15rem;
@@ -757,7 +762,7 @@ footer {
 
     /* Menu Desktop - Dylan */
     .menu_button_layout{
-      display: flex;
+      flex-direction: row;
       width: 50rem;
       justify-content: space-around;
     }
