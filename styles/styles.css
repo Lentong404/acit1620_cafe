@@ -179,7 +179,7 @@ h1{
     text-shadow: #000000 1px 1px 2px;
 }
 
-/* Main */
+/* Main  Mobile*/
 
 main{
   display: flex;
@@ -212,7 +212,7 @@ h3{
   text-align: left;
 }
 
-/* Carousal */
+/* Carousal Mobile */
 
 .carousal{
     display: flex;
@@ -271,14 +271,14 @@ h3{
 
 
 
-/* Daily Special */
+/* Monthly Special - Mobile */
 .monthly_special img{
   width: 20rem;
   height: 20rem;
   object-fit: cover;
 }
 
-/* Menu Link */
+/* Menu Link - Mobile*/
 
 .featured_menu img{
   width: 20rem;
@@ -287,7 +287,7 @@ h3{
   object-position: bottom;
 }
 
-/* Working Hours */
+/* Working Hours - Mobile */
 
 .hours_overlay{
   background-color: rgba(0, 0, 0, 0.5);
@@ -450,49 +450,89 @@ h3{
 
 /* Contact us - Mobile */
 
-.contact_us_page p{
+.contactUsPage p{
   margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
-.contact_info{
+.contactUsPage{
+  margin-bottom: 3rem;
+}
+
+.contactInfo{
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
 
-.contact_info h2{
+.contactInfo h2{
   margin-bottom: 0.5rem;
 }
 
-.single_contact_info{
+.singleContactInfo{
   display: flex;
   align-items: baseline;
   gap: 1em;
 }
 
-/* Form Stuff */
+/* Form Input Fields */
 
-.form_input{
+.formInput{
   color: antiquewhite;
   background-color: #9F6D4F;
   padding: 2rem 5rem 1rem 5rem;
   border-radius: 2rem;
 }
 
-.form_input_single{
+.formInputSingle{
   display: flex;
   flex-direction: column;
   text-align: left;
   gap: 0.5em;
 }
 
-.form_input_section{
+.formInputSection{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+/* navigation footer for all web pages */
+footer {
+  background-color: #BA9D8A;
+  color: white;
+}
+
+.navFooter { 
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
 
 
+.footArticle {
+  width: 350px;
+}
+/* space between div articles */
+.contactFoot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catOfTheMonth img{
+  margin-top: 15px;
+  width: 20rem;
+}
+
+.contacter {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.footerCopy{
+  bottom: 0;
+  text-align: center;
+  padding: 1rem;
+}
 
 /* Desktop Styles */
 @media(min-width: 43.75rem){
@@ -732,27 +772,27 @@ h3{
 
     /* Contact Page Desktop */
 
-    .contact_us_page{
+    .contactUsPage{
       display: flex;
       gap: 10rem;
       margin-top: 2rem;
       align-items: center;
     }
 
-    .form_input_section h2{
+    .formInputSection h2{
       text-align: center;
     }
+
+    /* Footer - Desktop Styles */
+    
+    .navFooter{
+      flex-direction: row;
+    }
+
+    .navFooter h3 {
+      justify-content: space-between;
+    }
+
+    
     
 }
-
-
-/* Footer Styling */
-footer{
-    bottom: 0;
-    text-align: center;
-    padding: 1rem;
-}
-
-
-
-
